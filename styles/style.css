@@ -14,8 +14,8 @@
 
 
 body{
-    background: black;
-    color: var(--mytheme);
+    background: rgb(115, 138, 165);
+    color: black;
 }
 .fa-html5{
     color: orangered;
@@ -33,6 +33,13 @@ body{
     font-family: 'Broetown Signature';
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:#bcf;
+    background: rgb(17, 16, 16);
+}
 header nav{
     width: 100%;
     text-align: center;
@@ -49,10 +56,12 @@ header nav a{
 .s1{
     font-family:'Broetown Signature', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
-    display: grid;
-    grid-template-rows: 5% 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
-    height: 60vh;
+    background: #bcf;
+    height: 70vh;
     box-sizing: border-box;
     
 }
@@ -86,7 +95,7 @@ header nav a{
 }
 
 .s2{
-   
+    
     display: flex;
     flex-direction: column;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -130,7 +139,7 @@ header nav a{
 }
 
 .Designs{
-    
+    background: #bcf;
     width: 99%;
     margin: auto;
     height: 50vh;
