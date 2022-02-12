@@ -15,7 +15,7 @@
 
 body{
     background: rgb(115, 138, 165);
-
+    overflow-x: hidden;
 }
 .fa-html5{
     color: orangered;
