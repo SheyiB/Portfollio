@@ -17,6 +17,14 @@
     src: url('../Merriweather_Sans/static/MerriweatherSans-Light.ttf') format("truetype");
 }
 
+html{
+    overflow-x: hidden;
+}
+body{
+    background: #bcf;
+
+}
+
 header{
     color: #bcf;
     height: 7vmax;
@@ -24,9 +32,7 @@ header{
 
 }
 
-body{
-    background: #bcf;
-}
+
 
 #projects, #experience, .myTech, #contact {
     font-size: 3vmin;
