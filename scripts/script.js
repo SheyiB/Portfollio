@@ -1,5 +1,18 @@
 const proj = document.querySelector('#projects')
 const btn = document.querySelector('.reveal');
+const topLink = document.querySelector(".top-link");
+
+window.addEventListener("scroll", () => {
+    const scrollHeight = window.pageYOffset;
+    
+    if (scrollHeight > 400){
+        topLink.classList.add("show-link")
+    } else {
+        topLink.classList.remove("show-link")
+    }
+})
+
+
 function adjust(){
 
     if ( btn.innerHTML == 'See More') {

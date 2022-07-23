@@ -12,6 +12,9 @@
     src: url('../broetown-signature-cdnfonts/Broetown\ Signature.ttf') format("truetype");
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     background: rgb(115, 138, 165);
@@ -308,6 +311,42 @@ footer div:nth-child(4) a{
 footer ul{
     list-style-type: none;
 }
+
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: white;
+    padding: 0.6em;
+    border-radius: 45%;
+    animation: bounce 1s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+  
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+  }
+
+.blob-motion{
+    position: absolute;
+    transform: translateY(-20%);
+}
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .blob-motion{
     position: absolute;
