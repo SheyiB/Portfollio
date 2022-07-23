@@ -33,7 +33,6 @@ header{
 }
 
 
-
 #projects, #experience, .myTech, #contact {
     font-size: 3vmin;
     padding-top: 5vh;
@@ -332,4 +331,9 @@ header, #about, #projects, #experience, #myTech, #services, #contact, #footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+
+.fcontact{
+    text-decoration: none;
 }
