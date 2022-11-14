@@ -112,7 +112,7 @@ header{
 }
 
 .servtrans{
-    background-image: url('../serv2.svg');
+    background-image: url('../media/images/serv2.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -249,7 +249,7 @@ header, #about, #projects, #experience, #myTech, #services, #contact, #footer{
 }
 
 #footer{
-    background-image: url('../foot.svg');
+    background-image: url('../media/images/foot.svg');
 
 }
 .custom-shape-divider-top-1639232046 {
@@ -312,7 +312,7 @@ header, #about, #projects, #experience, #myTech, #services, #contact, #footer{
 .wrkDown{
     aspect-ratio: 900/300;
     height: 40vh;
-    background-image: url('../last.svg');
+    background-image: url('../media/images/last.svg');
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
@@ -327,7 +327,7 @@ header, #about, #projects, #experience, #myTech, #services, #contact, #footer{
 .skilltransit{
     height: 30vh;
     width: 100%;
-    background-image: url('../tran.svg');
+    background-image: url('../media/images/tran.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
