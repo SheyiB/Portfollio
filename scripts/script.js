@@ -2,6 +2,7 @@ const proj = document.querySelector('#projects')
 const btn = document.querySelector('.reveal');
 const topLink = document.querySelector(".top-link");
 
+const sliderContainer = document.querySelector(".experience-list")
 window.addEventListener("scroll", () => {
     const scrollHeight = window.pageYOffset;
     
@@ -31,3 +32,36 @@ function adjust(){
 
 }
 
+let rightClickCount = 1 
+let leftClickCount = 1
+let leftOverflow = 0
+let rightOverflow = 2
+function rightSlider(){
+    if (rightOverflow < 3 && rightOverflow > 0){
+        let value = rightClickCount * 33
+        sliderContainer.style.marginLeft = `-${value}vw` ;
+        console.log(value)
+        rightClickCount++
+        leftClickCount > 0 ? leftClickCount-- : leftClickCount
+        rightOverflow--
+        leftOverflow++
+    }
+
+    console.log(`Right Click Count : ${rightClickCount} | LeftClickCount : ${leftClickCount} |  RightOverflow : ${rightOverflow} | LeftOverflow : ${leftOverflow}`)
+    
+}
+
+
+function leftSlider(){
+    if (leftOverflow>=1){
+        let value = leftClickCount * 33
+        sliderContainer.style.marginLeft = `${value}vw` ;
+        console.log(value)
+        leftClickCount++
+        rightClickCount--
+        leftOverflow--
+        rightOverflow++
+    }
+    
+    console.log(`Right Click Count : ${rightClickCount} | LeftClickCount : ${leftClickCount} |  RightOverflow : ${rightOverflow} | LeftOverflow : ${leftOverflow}`)
+}

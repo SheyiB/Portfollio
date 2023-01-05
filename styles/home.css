@@ -3,13 +3,21 @@
     padding: 0px;
     text-align: center;
     font-family: Merriweather;
-    font-weight: 100;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --tblack: #221E22;
     --tblue: #1098F7;
     --twhite: #FFFFFF;
     --tpink : #F93943;
     --tsilver: #DECCCC;
+    --mytheme: #07f;
+}
 
+@import url('../broetown-signature-cdnfonts/Broetown\ Signature.ttf');
+
+@font-face {
+    font-family: "Broetown Signature";
+    src: url('../broetown-signature-cdnfonts/Broetown\ Signature.ttf') format("truetype");
 }
 
 @font-face {
@@ -19,6 +27,7 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     background: #bcf;
@@ -29,14 +38,101 @@ header{
     color: #bcf;
     height: 7vmax;
     background: #001829;
+    display: grid;
+    grid-template-columns: 50% 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    width: 100%;
+    font-family: 'Broetown Signature', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header nav a{
+    color: #bcf;
+    text-decoration: none;
+    font-size: 2vw;
+    
+}
+
+header nav a:hover, header nav a:active{
+    border-bottom: 2px solid rgb(115, 138, 165);
+    color: rgb(115, 138, 165);
+    padding-bottom: 5px;
+    transition: .3s;
+}
+
+.title{
+    width: 100%;
+    font-family:  cursive;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Broetown Signature';
+}
+
+
+.s1{
+    font-family:'Broetown Signature', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background:  #bcf;
+    color: #001829;
+    height: 70vh;
+    box-sizing: border-box;
 
 }
 
+.s1 p{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 6vh;
+    text-align: justify;
+    padding: 2vw;
+    font-family: 'Broetown Signature';
+    justify-content: space-around;
+    font-weight: 500;
+    text-align: center;
+    z-index: 2;
+
+
+}
+
+.s1 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1 span img{
+    width: 10%;
+    height: 35%;
+    border-radius: 50%;
+}
 
 #projects, #experience, .myTech, #contact {
     font-size: 3vmin;
     padding-top: 5vh;
     }
+
+
+.myTech{
+    width: 99%;
+    height: 35vh;
+    display: grid;
+    grid-template-rows: 20% 60%;
+    gap: 25px;
+
+
+}
+
 .myTech ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -44,8 +140,54 @@ header{
     list-style: none;
 }
 
+
+
+.services ul{
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.message{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-sizing: border-box;
+    height: 35vh;
+    font-size: 2.3vmin;
+    margin-bottom: 5%;
+    background:  #bcf;
+    padding-bottom: 10vh;
+
+}
+
+.message h1{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-left: 5vw;
+
+}
+
+.drpm{
+    height: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(3,1fr );
+    width: 90%;
+    font-size: 2vw;
+    font-family: 'Broetown Signature';
+}
+
+.drpm input{
+    width: 10vw;
+}
+
+
 #experience{
-    height: 20vh;
+    height: 35vh;
     color: #001829;
     background: #bbccff;
     display: grid;
@@ -53,14 +195,49 @@ header{
     padding-top: 0;
 }
 
-#experience ul{
+.experience-list{
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 200vw;
     height: 100%;
     margin-top: 5vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    
 }
-
+.experience-head{
+    width: 100vw;
+}
+.work-experience{
+    color:  #bbccff;
+    background: #001829;
+    width: 33vw;
+    margin-right: 0.05vw;
+    border: 2px solid pink;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+.sliders-box{
+    position: relative;
+    top: -15vh;
+    width: 100vw;
+    
+}
+.sliders{
+    position: relative;
+    font-size: 3rem;
+    color: red;
+    background: #bbccff;
+    border-radius: 50% ;
+    width: 150px;
+    border: 2px solid green;
+}
+.slider-right{
+    right: -300px;
+    background: black
+}
 #contact{
     color: #bcf;
     background: black;
@@ -95,6 +272,65 @@ header{
     z-index: 2;
 
 }
+
+
+footer{
+    margin-top: -4%;
+    width: 100%;
+    height: 45vh;
+    background: rgb(68, 65, 65) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vw;
+}
+
+footer nav a {
+    text-decoration: none;
+}
+footer div:nth-child(1), footer div:nth-child(2),footer div:nth-child(3){
+    width: 20vw;
+    height: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1vw;
+
+}
+
+footer div:nth-child(4){
+    width: 20vw;
+    height: 90%;
+    display: flex;
+}
+
+footer div:nth-child(1) a, footer div:nth-child(2) a,footer div:nth-child(3) a{
+    color: black;
+    text-decoration: none;
+
+}
+
+footer div h3{
+    margin-bottom: 1vh;
+}
+footer div:nth-child(4) a{
+    background: white;
+    color: black;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5vw;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+
 #footer{
     font-size: 4vmin;
     margin-top: -20vh;
@@ -336,4 +572,55 @@ header, #about, #projects, #experience, #myTech, #services, #contact, #footer{
 
 .fcontact{
     text-decoration: none;
+}
+
+
+.fa-html5{
+    color: orangered;
+}
+
+.fa-js-square{
+    color: yellow;
+}
+
+
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: white;
+    padding: 0.6em;
+    border-radius: 45%;
+    animation: bounce 1s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+  
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+  }
+
+.blob-motion{
+    position: absolute;
+    transform: translateY(-20%);
+}
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.blob-motion{
+    position: absolute;
+    transform: translateY(-20%);
 }
