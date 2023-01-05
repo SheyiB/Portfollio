@@ -54,8 +54,8 @@ function rightSlider(){
 
 function leftSlider(){
     if (leftOverflow>=1){
-        let value = leftClickCount * 33
-        sliderContainer.style.marginLeft = `${value}vw` ;
+        let value = leftOverflow == 2 ? -33 : 0 
+        sliderContainer.style.marginLeft  = `${value}vw` ;
         console.log(value)
         leftClickCount++
         rightClickCount--
