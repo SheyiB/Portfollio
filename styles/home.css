@@ -203,6 +203,7 @@ header nav a:hover, header nav a:active{
     height: 100%;
     margin-top: 5vh;
     display: flex;
+    padding-left: 0.5vw;
     flex-direction: row;
     
 }
@@ -214,29 +215,46 @@ header nav a:hover, header nav a:active{
     background: #001829;
     width: 33vw;
     margin-right: 0.05vw;
-    border: 2px solid pink;
+    margin-left: 0.05vw;
     display: flex;
     font-size: 1.5rem;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-skills{
+    font-size: 1rem;
+}
+
+.work-duration{
+    font-size: 1.2rem;
+}
+
+.work-title{
+    font-size: 1.35rem;
 }
 .sliders-box{
     position: relative;
-    top: -15vh;
-    width: 100vw;
-    
+    top: 6vh;
+    width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sliders{
     position: relative;
     font-size: 3rem;
-    color: red;
-    background: #bbccff;
+    color: #bbccff;
+    height: 75px;
+    background: #001829;
     border-radius: 50% ;
-    width: 150px;
+    width: 75px;
     border: 2px solid green;
 }
 .slider-right{
-    right: -300px;
-    background: black
+    right: 10px;    
+    background: black;
 }
 #contact{
     color: #bcf;
