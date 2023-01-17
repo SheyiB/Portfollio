@@ -9,8 +9,8 @@
 
     <link href="http://fonts.cdnfonts.com/css/broetown-signature" rel="stylesheet" type="text/css" />
     <link href="/broetown-signature-cdnfonts/Broetown Signature.ttf" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
@@ -30,7 +30,7 @@
             <a href="#about">About </a>
             <a href="#projects">Projects </a>
             <a href="#contact">Contact </a>
-            <a href="https://medium.com/@elijahbanjo">Blog </a>
+            <a href="./blog.html">Blog </a>
             <a href="#services">Services </a>
 
         </nav>
@@ -112,16 +112,62 @@
     </section>
 
     <section id="experience">
-        <h3> Work Experience</h3>
-        <ul class=" ">
-            <li>OAU CISRG: Python for Data Science Intern [January 2020 - February 2020]</li>
-            <li>AA-Consulting: Student Intern [July 2021 - November 2021]</li>
-            <li>Proctor Me: Backend Developer [October 2021 - June 2022]</li>
-            <li>Technify Incubator: Backend Developer [April 2022 - June 2022]</li>
+        <h3 class="experience-head"> Work Experience</h3>
+        <ul class="experience-list">
+            
+            <li class="work-experience">
+                <span class="work-company">Esently</span> 
+                <span class="work-title">Full-Stack Web Developer</span> </span>
+                <span class="work-duration">Sept 2022 - Nov 2022</span> 
+                <span class="work-skills">ReactJs - Flask - SQL - Git - Gatsby - GCP</span>
+            </li>
+
+            
+            <li class="work-experience">
+                <span class="work-company">Technify Incubator</span> 
+                <span class="work-title">Backend Developer </span> </span>
+                <span class="work-duration">April 2022 - July 2022</span> 
+                <span class="work-skills">NodeJs - ExpressJs - MongoDB - Git -API</span>
+            </li>
+
+            <li class="work-experience"> 
+                <span class="work-company">Proctor Me</span> 
+                <span class="work-title">Backend Developer </span> </span>
+                <span class="work-duration">Oct 2021 - June 2022</span> 
+                <span class="work-skills">NodeJs - ExpressJs - MongoDB - Git -API</span>
+            </li>
+            
+            <li class="work-experience">
+                <span class="work-company">AA-Consulting</span> 
+                <span class="work-title">Cybersecurity Student Intern </span> </span>
+                <span class="work-duration">July 2021 - Nov 2021</span> 
+                <span class="work-skills">Cybersecurity</span>
+            </li>
+
+            <li class="work-experience">
+                <span class="work-company">OAU CISRG</span> 
+                <span class="work-title">Python for Data Science  Intern </span>
+                <span class="work-duration">Jan 2020 - Feb 2020</span> 
+                <span class="work-skills"> Python - MySQL - Machine Learning </span>
+            </li>
+
+            <li class="work-experience">
+                <span class="work-company">AA-Consulting</span> 
+                <span class="work-title">Cybersecurity Student Intern </span> </span>
+                <span class="work-duration">July 2021 - November 2021</span> 
+                <span class="work-skills">Cybersecurity</span>
+            </li>
+
 
         </ul>
-
+        <span class="sliders-box">
+            <span class="sliders slider-left" onclick=leftSlider()> < </span>
+            <span class="sliders slider-right" onclick=rightSlider()> > </span>
+        </span>
+        
     </section>
+    
+
     <section class="wrkDown"></section>
 
     <section class="myTech">
