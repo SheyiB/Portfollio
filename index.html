@@ -67,14 +67,62 @@
     </svg>
     </section>
 
-    <section id="projects">
-        <h3>Projects</h3>
+    <section class="projects">
+        <h3 class="projectSectionHeader">Projects</h3>
 
         <ul class="UL1">
-            <li><a  target="_blank" href="https://github.com/SheyiB/EcommereAPI">Ecommerce API: NodeJs,MongoDB, Express</a>  </li>
-            <li> <a target="_blank" href="https://user-dashboard-xi.vercel.app/"> User Interface Implementation of a User Dashboard: ReactJS</a> </li>
-            <li> <a target="_blank" href="https://sheyib.github.io/Developer-Landing-Page/"> Developer Landing Page : HTML, CSS</a></li>
+
+            <li class="projectItems">
+                <span class="projectBg"> </span>
+
+                <span class="projectInfo">
+                    <span class="projectTitle"> Ecommerce API </span>
+                    <span class="projectDescription"> An API that allows you to perform Ecommerce Activities </span>
+                    <span class="projectTechnologies"> NodeJs,MongoDB, Express </span> 
+                </span>  
+
+                <span class="projectView">
+                    <a  target="_blank" href="https://github.com/SheyiB/EcommereAPI">GitHub</a>  
+                    <a target="" href="#"> Live Deployment </a>
+                </span>
+            </li>
+
+            <li class="projectItems">
+                <span class="projectBg"> </span>
+
+                <span class="projectInfo">
+                    <span class="projectTitle"> Expense Tracker App </span>
+                    <span class="projectDescription"> An Application that allows you to track your expense </span>
+                    <span class="projectTechnologies"> NextJs,MongoDB, Express, TypeScript </span> 
+                </span>  
+
+                <span class="projectView">
+                    <a  target="_blank" href="https://github.com/SheyiB/EcommereAPI">GitHub</a>  
+                    <a target="" href="#"> Live Deployment </a>
+                </span>
+            </li>
+
+            
+            <li class="projectItems">
+                <span class="projectBg"> </span>
+
+                <span class="projectInfo">
+                    <span class="projectTitle"> Project Clean Earth</span>
+                    <span class="projectDescription"> An API that allows you make donations towards making the Earth Clean </span>
+                    <span class="projectTechnologies"> Express, MongoDB, PayStack API </span> 
+                </span>  
+
+                <span class="projectView">
+                    <a  target="_blank" href="https://github.com/SheyiB/ProjectCleanEarth">GitHub</a>  
+                    <a target="" href="#"> Live Deployment </a>
+                </span>
+            </li>
+<!-- 
             <li> <a target="_blank" href="https://github.com/SheyiB/ProjectCleanEarth"> Project Clean Earth</a> </li>
+            <li> <a target="_blank" href="https://sheyib.github.io/Developer-Landing-Page/"> Developer Landing Page : HTML, CSS</a></li>
+            <li> <a target="_blank" href="https://user-dashboard-xi.vercel.app/"> User Interface Implementation of a User Dashboard: ReactJS</a> </li>
+            
+            
             <li> <a target="_blank" href="https://sheyib.github.io/Demo-Crucified-Website/"> Demo website for Crucified clothing line</a> </li>
             <li> <a target="_blank" href="https://github.com/SheyiB/Binary-Calculator"> Binary Calculator : Python</a></li>
             <li> <a target="_blank" href="https://github.com/SheyiB/Turtle"> Python Turtle drawings: Name lettering, Blue face drawing and Ayo Game board</a> </li>
@@ -83,9 +131,9 @@
             <li> <a target="_blank" href="https://github.com/SheyiB/Hospital-Management-System">  Hospital Management API </a> </li>
             <li> <a target="_blank" href="https://github.com/SheyiB/RegApp"> Registration App : FullStack. Mongodb-Nodejs-Ejs-Css </a> </li>
             <li> <a target="_blank" href="https://github.com/SheyiB/schoolApp"> School App: Python & SQL </a>  </li>
-            <li> <a target="_blank" href="https://github.com/SheyiB/Web-Scrapping-with-Python"> Web Scraping Project</a> </li>
+            <li> <a target="_blank" href="https://github.com/SheyiB/Web-Scrapping-with-Python"> Web Scraping Project</a> </li> -->
         </ul>
-        <button class="reveal" onclick="adjust()"> See More</button>
+        <!-- <button class="reveal" onclick="adjust()"> See More</button> -->
 
         <div class="custom-shape-divider-top-1639129303">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -214,26 +262,23 @@
     <section class="message" id="contact">
         <h1>Leave a Message</h1>
         <form class="drpm">
-            <span>
+            <span class="msgSpans">
                 <label>Name</label>
-                <input type="text">
+                <input class="msgInputs" type="text">
             </span>
 
-            <span>
+            <span class="msgSpans">
                 <label>Email</label>
-                <input type="text"><br>
+                <input class="msgInputs" type="text">
             </span>
 
-            <span>
+            <span class="msgSpans">
                 <label>Message</label>
-                <input type="text">
-                <button type="submit" class="spbtn">Submit</button>
+                <input class="msgInputs userMessage" type="text">
             </span>
 
-
-
+            <button type="submit" class="spbtn">Submit</button>
         </form>
-
     </section>
 
 
