@@ -124,12 +124,13 @@ header nav a:hover, header nav a:active{
 
     
 .projects{
-    
     font-size: 3vmin;
     height: 80vh;
     position: relative;
-    display: grid;
-    grid-template-rows: 15% 45% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     padding-top: 15vh;
     transition: height 1s;
@@ -141,17 +142,20 @@ header nav a:hover, header nav a:active{
   display: inherit;  
 }
 
-.UL1{
-    border: 2px solid red;
+.projectList{
+    
     height: 40vh;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
     justify-content: space-between;
-    overflow: hidden
+    overflow: hidden;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 
 
-.UL1 li a{
+.projectList li a{
     text-decoration: none;
     color: #bcf;
 }
@@ -160,8 +164,68 @@ header nav a:hover, header nav a:active{
 .projectItems{
     margin: auto;
     border: 2px solid gray;
-    width: 30vw;
+    width: 25vw;
+    height: 300px;
+    font-size: 1rem;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.projectInfo{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    justify-content: end;
+}
+
+.projectTitle{
+    width: 100%;
+    height: 30%;
+    padding: 4px 0px;
+
+}
+
+.projectDescription{
+    width: 100%;
+    height: 40%;
+}
+
+.projectTechnologies{
+    width: 100%;
+    height: 30%;
+}
+
+.projectView{
+    
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.live, .repo{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+}
+
+.live{
+    margin-left: 10px;
+}
+
+
+.reveal{
+    width: 150px;
+    margin:  auto;
+    margin-top: 0vh;
+    height: 55px;
+    border-radius: 25px;
 }
 
 .custom-shape-divider-top-1639129303 {
@@ -481,12 +545,6 @@ footer ul{
 
 
 
-.reveal{
-    width: 150px;
-    margin:  auto;
-    height: 55px;
-    border-radius: 25px;
-}
 
 header, #about, #experience, #myTech, #services, #contact, #footer{
     position: relative;
