@@ -125,7 +125,8 @@ header nav a:hover, header nav a:active{
     
 .projects{
     font-size: 3vmin;
-    height: 80vh;
+    height: 60vh;
+    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -144,14 +145,17 @@ header nav a:hover, header nav a:active{
 
 .projectList{
     
-    height: 40vh;
-    display: flex;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
     padding-left: 7vw;
     padding-right: 7vw;
+    padding-top: 30px;
 }
 
 
@@ -162,6 +166,7 @@ header nav a:hover, header nav a:active{
 
 
 .projectItems{
+    
     margin: auto;
     border: 2px solid gray;
     width: 25vw;
@@ -171,7 +176,17 @@ header nav a:hover, header nav a:active{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    margin-bottom: 20px;
+
 }
+
+
+.projectItems:hover{
+    background: #bcf;
+    color: #221E22;
+}
+
+
 
 .projectInfo{
     height: 45%;
@@ -201,7 +216,6 @@ header nav a:hover, header nav a:active{
 }
 
 .projectView{
-    
     height: 13%;
     display: flex;
     justify-content: center;
@@ -209,23 +223,42 @@ header nav a:hover, header nav a:active{
 }
 
 .live, .repo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
-    background: white;
+    font-size: 22px;
+    border: 2px solid #bcf;
+    
+    color: black;
     border-radius: 50%;
 }
+
 
 .live{
     margin-left: 10px;
 }
 
+.projectItems:hover  .live{
+    background: #bcf;
+    color: #221E22;
+    border: 2px solid #221E22;
+}
 
+
+.projectItems:hover  .repo{
+    background: #bcf;
+    color: #221E22;
+    border: 2px solid #221E22;
+}
 .reveal{
     width: 150px;
     margin:  auto;
     margin-top: 0vh;
     height: 55px;
     border-radius: 25px;
+    margin-bottom: 5px;
 }
 
 .custom-shape-divider-top-1639129303 {
